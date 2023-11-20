@@ -4,7 +4,6 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    #@userinput = params[:userinput]
     @answer = ["Great !", "Silly question, get dressed and go to work!", "I don't care, get dressed and go to work!"]
     if params[:userinput] == 'I am going to work'
       @answer = @answer[0]
